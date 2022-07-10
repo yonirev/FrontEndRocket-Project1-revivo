@@ -29,6 +29,7 @@
      $("#corporate").click(function(){
        $("#formM").hide();
        $("#formC").show();
+       $("#secondcard").show();
        $("#multicards").show();
        $("#singlecard").hide();
      });
@@ -36,6 +37,7 @@
      $("#association").click(function(){
        $("#formM").hide();
        $("#formA").show();
+       $("#secondcard").show();
        $("#multicards").show();
        $("#singlecard").hide();
      });
@@ -44,6 +46,7 @@
      $("#mrC").click(function(){
        $("#formC").hide();
        $("#formM").show();
+       $("#secondcard").hide();
        $("#singlecard").show();
        $("#multicards").hide();
      });
@@ -51,6 +54,7 @@
      $("#missC").click(function(){
        $("#formC").hide();
        $("#formM").show();
+       $("#secondcard").hide();
        $("#singlecard").show();
        $("#multicards").hide();
      });
@@ -64,6 +68,7 @@
      $("#mrA").click(function(){
        $("#formA").hide();
        $("#formM").show();
+       $("#secondcard").hide();
        $("#singlecard").show();
        $("#multicards").hide();
      });
@@ -71,6 +76,7 @@
      $("#missA").click(function(){
        $("#formA").hide();
        $("#formM").show();
+       $("#secondcard").hide();
        $("#singlecard").show();
        $("#multicards").hide();
      });
@@ -229,14 +235,14 @@
      <div id="section2">
       <div>
         <div class="d-flex row justify-content-center align-items-center text-center">
-          <div  class="display-1 fw-bold text-light mb-2">choose your card</div> 
+          <div  class="display-3 fw-bold title1 mb-4">Choose Your Card</div> 
           <div class="text-dark fs-6 fw-bold">Note: Depending on your country of residence, local recharge limits may apply to your card.</div>
         </div>
         <div class="row justify-content-center align-items-center">
           <div class="card1 col-sm-3 my-5 mx-1 p-0" type="button">
-            <img src="/img/calm-busy-caucasian-teen-boy-pupil-with-credit-car-2021-10-11-18-33-09-utc 1.jpg" class="card-img-top" alt="...">
-            <div class="card-body p-2">
-              <h5 class="card-title title">Silver</h5>
+            <img src="./img/calm-busy-caucasian-teen-boy-pupil-with-credit-car-2021-10-11-18-33-09-utc 1.jpg" class="card-img-top" alt="...">
+            <div class="card-body ms-2 mt-2">
+              <h5 class="card-title title ps-2">Silver</h5>
               <ul class="card-text">
                 <li>No documents to provide</li>
                 <li>Withdrawal up to €100 per day</li>
@@ -246,9 +252,9 @@
             </div>
           </div>
           <div class="card1 col-sm-3 my-5 mx-1 p-0" type="button">
-            <img src="/img/young-surprised-man-holding-credit-card-using-mob-2022-01-12-17-55-57-utc.jpg" class="card-img-top" alt="...">
-            <div class="card-body p-2">
-              <h5 class="card-title title">Gold</h5>
+            <img src="./img/young-surprised-man-holding-credit-card-using-mob-2022-01-12-17-55-57-utc.jpg" class="card-img-top" alt="...">
+            <div class="card-body ms-2 mt-2">
+              <h5 class="card-title title ps-2">Gold</h5>
               <ul class="card-text">
                 <li>Individual or society</li>
                 <li>Access to Special Offers</li>
@@ -258,9 +264,9 @@
             </div>
           </div>       
           <div class="card1 col-sm-3 my-5 mx-1 p-0" type="button">
-            <img src="/img/attractive-girl-holds-credit-card-and-purse-on-pin-2021-10-21-16-33-56-utc.jpg" class="card-img-top" alt="...">
-            <div class="card-body p-2">
-              <h5 class="card-title title">Platinium</h5>
+            <img src="./img/attractive-girl-holds-credit-card-and-purse-on-pin-2021-10-21-16-33-56-utc.jpg" class="card-img-top" alt="...">
+            <div class="card-body ms-2 mt-2">
+              <h5 class="card-title title ps-2">Platinium</h5>
               <ul class="card-text">
                 <li>Individual or society</li>
                 <li>Access to Special Offers</li>
@@ -279,58 +285,63 @@
     <!--mr or miss-->
    <div id="formM"> 
     <div class="row">
-      <div class=" col-md-6 p-5">
-        <div class="row d-flex py-5">
-        <div class="fs-2 title1 text-uppercase justify-content-center mb-4">PERSONAL DETAILS</div>
-        <div class="d-flex align-items-center">
+      <div class="col-md-6 py-4 px-4">
+        <div class="mx-sm-5">
+        <div class="row d-flex py-3">
+        <div class="fs-2 ps-sm-3 title1 text-uppercase justify-content-center mb-4">PERSONAL DETAILS</div>
+        <div class="d-flex ps-2 align-items-center">
          <div><div class="inp2"><i class="bi bi-arrow-right"></i></div></div>
          <div><div class="inp1"></div></div>
          <div><div class="inp1"></div></div>
         </div>
        </div>
-        <dl class="row">
+        <dl class="row ps-1">
           <dt class="fs-4 title1 col-2">Title:</dt>
-          <dd class="col-10">
-            <div class="form-check form-check-inline">
+          <dd class="col-10 row mt-3">
+            <div class="col-sm-6 d-flex">
+              <div class="col-6">
               <input class="form-check-input" type="radio" name="OptionsM" id="mr" value="option1" checked>
               <label class="form-check-label" for="inlineRadio1">Mr.</label>
             </div>
-            <div class="form-check form-check-inline">
+            <div class="col-6">
               <input class="form-check-input" type="radio" name="OptionsM" id="miss" value="option2">
               <label class="form-check-label" for="inlineRadio2">Miss.</label>
             </div>
-            <div class="form-check form-check-inline">
+          </div>
+            <div class="col-sm-6 d-flex">
+              <div class="col-6">
               <input class="form-check-input" type="radio" name="OptionsM" id="corporate" value="option3">
               <label class="form-check-label" for="inlineRadio3">Corporate</label>
             </div>
-            <div class="form-check form-check-inline">
+            <div class="col-6">
               <input class="form-check-input" type="radio" name="OptionsM" id="association" value="option4">
               <label class="form-check-label" for="inlineRadio4">Association</label>
             </div>
+          </div>
           </dd>
         </dl>
         
         <div class="row py-3">
           <div class="col-sm-6 pb-3">
-            <label for="exampleFormControlInput1" class="form-label title1">First name</label>
+            <label class="form-label title1 ps-0">First name</label>
             <input type="text" class="form-control" placeholder="First name" aria-label="First name" >
           </div>
           <div class="col-sm-6">
-            <label for="exampleFormControlInput1" class="form-label title1">Last name</label>
+            <label class="form-label title1 ps-0">Last name</label>
             <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" >
           </div>
         </div>
         <div class="col-6 pe-3">
-          <label for="exampleFormControlInput1" class="form-label title1">Date</label>
+          <label class="form-label title1 ps-0">Date Of Birth</label>
           <input type="text" class="form-control" placeholder="dd/mm/yy" aria-label="dd/mm/yy" > 
         </div>
         <div class="row d-flex mt-3">
         <div class="col-sm-6"> 
-          <label for="exampleFormControlInput1" class="form-label title1">Custom-field</label>
+          <label class="form-label title1 ps-0">Custom-field</label>
           <input type="text" class="form-control" id="inputPassword2" placeholder="custom-field">
         </div>
-        <div class="col-sm-6">
-          <div class="form-check form-check-inline mt-1 pt-5">
+        <div class="col-sm-6 mt-sm-5 pt-4">
+          <div class="form-check form-check-inline ">
             <input class="form-check-input" type="radio" name="IBAN1" id="inlineRadio1" value="option1" checked>
             <label class="form-check-label" for="inlineRadio1">IBAN UK</label>
           </div>
@@ -341,16 +352,18 @@
         </div>
        </div>
 
-        <div id="addcard" class="title1 fs-5 mt-3 mb-5" role="button"><span class="fs-3 fw-bolder">+</span> Add Card</div>
+        <div id="addcard" class="title1 fs-5 mt-3 mb-5 ps-0" role="button">
+          <span class="fs-3 fw-bolder">+</span> Add Card
+        </div>
 
-          <div id="deletecarde"> 
+        <div id="deletecarde"> 
           <div class="row d-flex my-2">
             <div class="col-sm-6"> 
-              <label for="exampleFormControlInput1" class="form-label title1 ps-0">Custom-field</label>
+              <label class="form-label title1 ps-0">Custom-field</label>
               <input type="number" class="form-control" id="inputPassword2" placeholder="custom-field">
             </div>
             <div class="col-sm-6">
-            <div class="form-check form-check-inline mt-1 pt-5">
+            <div class="form-check form-check-inline mt-sm-5 pt-4">
               <input class="form-check-input" type="radio" name="IBAN2" id="inlineRadio1" value="option1" checked>
               <label class="form-check-label" for="inlineRadio1">IBAN UK</label>
             </div>
@@ -359,7 +372,7 @@
               <label class="form-check-label" for="inlineRadio2">IBAN FR</label>
             </div>
           </div>
-          <div id="delete" class="title1 fs-5" role="button"><i class="bi bi-trash3"></i> Delete Card</div>
+          <div id="delete" class="title1 fs-5 pt-3" role="button"><i class="bi bi-trash3"></i> Delete Card</div>
          </div>
         </div>
 
@@ -370,13 +383,15 @@
         </label>
        </div> 
       
-       <div class="row d-flex justify-content-between mt-4">
-        <button type="button" class="previous previous1 btn col-2 p-2"><i class="bi bi-arrow-left"></i> Previous</button>
+       <div class="row d-flex justify-content-between mt-4 px-2">
+        <button type="button" class="previous previous1 btn col-2"><i class="bi bi-arrow-left"></i> Previous</button>
         <button type="button" class="continue continue1 btn col-2">Continue <i class="bi bi-arrow-right"></i></button>
        </div>
       </div>
-      <div class="col-md-6 ">
-        <img src="/img/shop-assistant-talking-to-young-couple-shopping-ki-2022-01-25-02-31-19-utc 1.png" alt="" class="img-fluid">
+      </div>
+
+      <div class="col-md-6">
+        <img src="./img/shop-assistant-talking-to-young-couple-shopping-ki-2022-01-25-02-31-19-utc 1.png" alt="" class="img-fluid">
     </div>
    </div>
    </div>
@@ -384,72 +399,78 @@
  <!--corporate-->
    <div id="formC"> 
     <div class="row">
-    <div class="col-lg-6 p-5">
-     <div class="row d-flex py-5">
-     <div class="fs-2 title1 text-uppercase justify-content-center mb-4">CORPORATE INFORMATION</div>
-     <div class="d-flex align-items-center">
-      <div><div class="inp2"><i class="bi bi-arrow-right"></i></div></div>
-      <div><div class="inp1"></div></div>
-      <div><div class="inp1"></div></div>
-     </div>
-     </div>
-     <dl class="row">
-       <dt class="fs-4 title1 col-2">Title:</dt>
-       <dd class="col-10">
-         <div class="form-check form-check-inline">
-           <input class="form-check-input" type="radio" name="OptionsC" id="mrC" value="option1">
-           <label class="form-check-label" for="inlineRadio1">Mr.</label>
+    <div class="col-lg-6 py-4 px-4">
+      <div class="mx-sm-5">
+        <div class="row d-flex py-4">
+          <div class="fs-2 title1 ps-sm-3 text-uppercase justify-content-center mb-4">CORPORATE INFORMATION</div>
+          <div class="d-flex align-items-center ps-2">
+           <div><div class="inp2"><i class="bi bi-arrow-right"></i></div></div>
+           <div><div class="inp1"></div></div>
+           <div><div class="inp1"></div></div>
          </div>
-         <div class="form-check form-check-inline">
-           <input class="form-check-input" type="radio" name="OptionsC" id="missC" value="option2">
-           <label class="form-check-label" for="inlineRadio2">Miss.</label>
-         </div>
-         <div class="form-check form-check-inline">
-           <input class="form-check-input" type="radio" name="OptionsC" id="corporate" value="option3" checked>
-           <label class="form-check-label" for="inlineRadio3">Corporate</label>
-         </div>
-         <div class="form-check form-check-inline">
-           <input class="form-check-input" type="radio" name="OptionsC" id="associationC" value="option4">
-           <label class="form-check-label" for="inlineRadio4">Association</label>
-         </div>
-       </dd>
-     </dl>
-     <div class="row py-3">
+        </div>
+       
+       <dl class="row ps-1">
+        <dt class="fs-4 title1 col-2">Title:</dt>
+        <dd class="col-10 row mt-3">
+          <div class="col-sm-6 d-flex">
+            <div class="col-6">
+            <input class="form-check-input" type="radio" name="OptionsC" id="mrC" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Mr.</label>
+          </div>
+          <div class="col-6">
+            <input class="form-check-input" type="radio" name="OptionsC" id="missC" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Miss.</label>
+          </div>
+        </div>
+          <div class="col-sm-6 d-flex">
+            <div class="col-6">
+            <input class="form-check-input" type="radio" name="OptionsC" id="corporate" value="option3" checked>
+            <label class="form-check-label" for="inlineRadio3">Corporate</label>
+          </div>
+          <div class="col-6">
+            <input class="form-check-input" type="radio" name="OptionsC" id="associationC" value="option4">
+            <label class="form-check-label" for="inlineRadio4">Association</label>
+          </div>
+        </div>
+        </dd>
+      </dl>
+       <div class="row py-3">
        <div class="col-sm-6 pb-3">
-         <label for="exampleFormControlInput1" class="form-label title1">Company Name</label>
+         <label class="form-label title1 ps-0">Company Name</label>
          <input type="text" class="form-control" placeholder="Company Name" aria-label="Company Name">
        </div>
        <div class="col-sm-6">
-         <label for="exampleFormControlInput1" class="form-label title1">Corporate Structure</label>
+         <label class="form-label title1 ps-0">Corporate Structure</label>
          <input type="text" class="form-control" placeholder="Corporate Structure" aria-label="Corporate Structure">
        </div>
-     </div>
-     <div class="col-6 pe-3">
-       <label for="exampleFormControlInput1" class="form-label title1">Date of birth person in charge</label>
+       </div>
+       <div class="col-sm-6 pe-3">
+       <label class="form-label title1 ps-0">Date of birth person in charge</label>
        <input type="text" class="form-control" placeholder="dd/mm/yy" aria-label="dd/mm/yy">
-     </div>
-     <div class="row pt-5">
+       </div>
+       <div class="row pt-5">
        <div class="title1 fs-2 mb-4">Card account parameters</div>
        <div class="col-sm-6">
-       <label for="exampleFormControlInput1" class="form-label title1">Please specify the number of cards you would like.</label>
+       <label class="form-label title1 ps-0">Please specify the number of cards you would like.</label>
        <select class="form-select mb-3" aria-label="Disabled select example" disabled>
          <option id="opt1" value="1">1 Card</option>
          <option id="opt2" value="2" selected>2 Cards</option>
        </select>
        </div>
-       <div class="col-sm-6 form-check mt-5 pt-2 ms-3">
+       <div class="col-sm-6 mt-sm-5 pt-4 ps-3">
          <input class="form-check-input cb1" type="checkbox" value="">
          <label class="form-check-label" for="cb1">Customization & IBAN selection</label>
        </div>
        <div class="corporateIBAN">
         <div class="row d-flex mt-2">
           <div class="col-sm-6"> 
-            <label for="exampleFormControlInput1" class="form-label title1 ps-0">Custom field card #1</label>
+            <label class="form-label title1 ps-0">Custom field card #1</label>
             <input type="text" class="form-control" id="inputPassword2" placeholder="custom-field">
           </div>
-          <div class="col-sm-6">
-            <div class="form-check form-check-inline my-3 py-4">
-              <input class="form-check-input" type="radio" name="IBAN4" id="inlineRadio1" value="option1" checked >
+          <div class="col-sm-6 mt-sm-5 pb-3 pt-4">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="IBAN4" id="inlineRadio1" value="option1" checked>
               <label class="form-check-label" for="inlineRadio1">IBAN UK</label>
             </div>
             <div class="form-check form-check-inline">
@@ -460,11 +481,11 @@
          </div>
          <div class="row d-flex">
           <div class="col-sm-6"> 
-            <label for="exampleFormControlInput1" class="form-label title1 ps-0">Custom field card #2</label>
-            <input type="text" class="form-control" id="inputPassword2" placeholder="custom-field" >
+            <label class="form-label title1 ps-0">Custom field card #2</label>
+            <input type="text" class="form-control" id="inputPassword" placeholder="custom-field" >
           </div>
-          <div class="col-sm-6">
-            <div class="form-check form-check-inline my-3 py-4">
+          <div class="col-sm-6 mt-sm-5 mb-3 pt-4">
+            <div class="form-check form-check-inline ">
               <input class="form-check-input" type="radio" name="IBAN5" id="inlineRadio1" value="option1" checked >
               <label class="form-check-label" for="inlineRadio1">IBAN UK</label>
             </div>
@@ -475,25 +496,25 @@
           </div>
          </div>
         </div>
-     </div>
+       </div>
     
 
-     <div class="form-check mt-5">
+       <div class="form-check mt-5">
       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
       <label class="form-check-label" for="flexCheckDefault">
         I confirm that I have read and accepted the Legal Notice, General Terms and Conditions and Privacy Policy.
       </label>
-     </div> 
+       </div> 
     
-     <div class="row d-flex justify-content-between mt-4">
-      <button type="button" class="previous previous1 btn col-2 p-2"><i class="bi bi-arrow-left"></i> Previous</button>
-      <button type="button" class="continue continue1 btn col-2">Continue <i class="bi bi-arrow-right"></i></button>
+       <div class="row d-flex justify-content-between mt-3 px-2">
+         <button type="button" class="previous previous1 btn col-2 p-2"><i class="bi bi-arrow-left"></i> Previous</button>
+         <button type="button" class="continue continue1 btn col-2">Continue <i class="bi bi-arrow-right"></i></button>
+       </div>
      </div>
-
     </div>
 
     <div class="col-lg-6">
-      <img src="/img/successful-shopping-in-the-shopping-mall-2021-08-27-09-17-52-utc 1.jpg" alt="" class="img-fluid">
+      <img src="./img/successful-shopping-in-the-shopping-mall-2021-08-27-09-17-52-utc 1.jpg" alt="" class="img-fluid">
     </div>
     </div>
    </div>
@@ -501,93 +522,99 @@
 <!--association-->
    <div id="formA">
    <div class="row">
-    <div class="col-sm-6 p-5">
-    <div class="row d-flex py-5">
-     <div class="fs-2 title1 text-uppercase justify-content-center mb-4">ASSOCIATION INFORMATION</div>
-     <div class="d-flex align-items-center">
-      <div><div class="inp2"><i class="bi bi-arrow-right"></i></div></div>
-      <div><div class="inp1"></div></div>
-      <div><div class="inp1"></div></div>
-     </div>
-    </div>
-     <dl class="row">
-       <dt class="fs-4 title1 col-2">Title:</dt>
-       <dd class="col-10">
-         <div class="form-check form-check-inline">
-           <input class="form-check-input" type="radio" name="OptionsA" id="mrA" value="option1">
-           <label class="form-check-label" for="inlineRadio1">Mr.</label>
-         </div>
-         <div class="form-check form-check-inline">
-           <input class="form-check-input" type="radio" name="OptionsA" id="missA" value="option2">
-           <label class="form-check-label" for="inlineRadio2">Miss.</label>
-         </div>
-         <div class="form-check form-check-inline">
-           <input class="form-check-input" type="radio" name="OptionsA" id="corporateA" value="option3">
-           <label class="form-check-label" for="inlineRadio3">Corporate</label>
-         </div>
-         <div class="form-check form-check-inline">
-           <input class="form-check-input" type="radio" name="OptionsA" id="association" value="option4" checked>
-           <label class="form-check-label" for="inlineRadio4">Association</label>
-         </div>
-       </dd>
-     </dl>
-     <div class="row py-3">
+    <div class="col-sm-6 py-4 px-4">
+      <div class="mx-sm-5">
+        <div class="row d-flex py-3">
+           <div class="fs-2 title1 text-uppercase justify-content-center ps-sm-3 mb-4">ASSOCIATION INFORMATION</div>
+           <div class="d-flex align-items-center ps-2">
+             <div><div class="inp2"><i class="bi bi-arrow-right"></i></div></div>
+             <div><div class="inp1"></div></div>
+             <div><div class="inp1"></div></div>
+            </div>
+        </div>
+       <dl class="row ps-1">
+        <dt class="fs-4 title1 col-2">Title:</dt>
+        <dd class="col-10 row mt-3">
+          <div class="col-sm-6 d-flex">
+            <div class="col-6">
+            <input class="form-check-input" type="radio" name="OptionsA" id="mrA" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Mr.</label>
+          </div>
+          <div class="col-6">
+            <input class="form-check-input" type="radio" name="OptionsA" id="missA" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Miss.</label>
+          </div>
+        </div>
+          <div class="col-sm-6 d-flex">
+            <div class="col-6">
+            <input class="form-check-input" type="radio" name="OptionsA" id="corporateA" value="option3" checked>
+            <label class="form-check-label" for="inlineRadio3">Corporate</label>
+          </div>
+          <div class="col-6">
+            <input class="form-check-input" type="radio" name="OptionsA" id="association" value="option4">
+            <label class="form-check-label" for="inlineRadio4">Association</label>
+          </div>
+        </div>
+        </dd>
+      </dl>
+       <div class="row pt-3">
        <div class="col-sm-6">
-         <label for="exampleFormControlInput1" class="form-label title1">Association Name</label>
+         <label class="form-label title1 ps-0">Association Name</label>
          <input type="text" class="form-control" placeholder="Association Name" aria-label="Association Name">
        </div>
      <div class="col-sm-6">
-       <label for="exampleFormControlInput1" class="form-label title1">Date of birth person in charge</label>
+       <label class="form-label title1 ps-0">Date of birth person in charge</label>
        <input type="text" class="form-control" placeholder="dd/mm/yy" aria-label="dd/mm/yy">
      </div>
-    </div>
-     <div class="row pt-5">
-       <div class="title1 fs-2 mb-4">Card account parameters</div>
+       </div>
+       <div class="row pt-5">
+       <div class="title1 fs-2 mb-2">Card account parameters</div>
        <div class="col-sm-6">
-       <label for="exampleFormControlInput1" class="form-label title1">Please specify the number of cards you would like.</label>
+       <label class="form-label title1 ps-0">Please specify the number of cards you would like.</label>
        <select class="form-select mb-3" aria-label="Disabled select example" disabled>
          <option id="opt1" value="1">1 Card</option>
          <option id="opt2" value="2" selected>2 Cards</option>
        </select>
        </div>
-       <div class="col-sm-6 form-check mt-2 pt-5"><input class="form-check-input cb1" type="checkbox" value="" id="">
+       <div class="col-sm-6 ps-2 mt-sm-5 pt-4">
+         <input class="form-check-input cb1" type="checkbox" value="" id="">
          <label class="form-check-label" for="cb1">Customization & IBAN selection</label>
        </div>
-     </div>
-     <div class="corporateIBAN">
+       </div>
+       <div class="corporateIBAN">
       <div class="row d-flex mt-2">
         <div class="col-sm-6"> 
-          <label for="exampleFormControlInput1" class="form-label title1">Custom field card #1</label>
+          <label class="form-label title1 ps-0">Custom field card #1</label>
           <input type="text" class="form-control" id="inputPassword2" placeholder="custom-field">
         </div>
-        <div class="col-sm-6">
-          <div class="form-check form-check-inline my-3 py-4">
-            <input class="form-check-input" type="radio" name="IBAN3" id="inlineRadio1" value="option1" checked>
+        <div class="col-sm-6 mt-sm-5 mb-3 pt-4">
+          <div class="form-check form-check-inline ">
+            <input class="form-check-input" type="radio" name="IBAN6" id="inlineRadio1" value="option1" checked>
             <label class="form-check-label" for="inlineRadio1">IBAN UK</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="IBAN3" id="inlineRadio2" value="option2">
+            <input class="form-check-input" type="radio" name="IBAN6" id="inlineRadio2" value="option2">
             <label class="form-check-label" for="inlineRadio2">IBAN FR</label>
           </div>
         </div>
        </div>
        <div class="row d-flex">
         <div class="col-sm-6"> 
-          <label for="exampleFormControlInput1" class="form-label title1">Custom field card #2</label>
+          <label class="form-label title1 ps-0">Custom field card #2</label>
           <input type="text" class="form-control" id="inputPassword2" placeholder="custom-field">
         </div>
-        <div class="col-sm-6">
-          <div class="form-check form-check-inline my-3 py-4">
-            <input class="form-check-input" type="radio" name="IBAN4" id="inlineRadio1" value="option1" checked>
+        <div class="col-sm-6 mt-sm-5 mb-3 pt-4">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="IBAN7" id="inlineRadio1" value="option1" checked>
             <label class="form-check-label" for="inlineRadio1">IBAN UK</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="IBAN4" id="inlineRadio2" value="option2">
+            <input class="form-check-input" type="radio" name="IBAN7" id="inlineRadio2" value="option2">
             <label class="form-check-label" for="inlineRadio2">IBAN FR</label>
           </div>
         </div>
        </div>
-      </div>
+       </div>
 
      <div class="form-check mt-5">
       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -596,15 +623,15 @@
       </label>
      </div> 
     
-     <div class="row d-flex justify-content-between mt-4">
-      <button type="button" class="previous previous1 btn col-2 p-2"><i class="bi bi-arrow-left"></i> Previous</button>
+     <div class="row d-flex justify-content-between mt-4 px-2">
+      <button type="button" class="previous previous1 btn col-2"><i class="bi bi-arrow-left"></i> Previous</button>
       <button type="button" class="continue continue1 btn col-2">Continue <i class="bi bi-arrow-right"></i></button>
      </div>
-
+      </div>
     </div>
 
     <div class="col-sm-6">
-      <img src="/img/two-elegant-men-coming-to-fashion-boutique-on-shop-2021-08-29-01-35-41-utc 1.png" alt="" class="img-fluid">
+      <img src="./img/two-elegant-men-coming-to-fashion-boutique-on-shop-2021-08-29-01-35-41-utc 1.png" alt="" class="img-fluid">
     </div>
   </div>
    </div>
@@ -614,10 +641,11 @@
 <!--step 2-->
     <div id="section4">
     <div class="row">
-      <div class="col-sm-6 p-5">
+      <div class="col-sm-6 p-4">
+        <div class="mx-sm-5">
         <div class="row d-flex py-5">
           <div class="fs-2 title1 text-uppercase justify-content-center mb-4">MY DETAILS</div>
-          <div class="d-flex align-items-center">
+          <div class="d-flex align-items-center ps-2">
            <div><div class="inp3"></div></div>
            <div><div class="inp2"><i class="bi bi-arrow-right"></i></div></div>
            <div><div class="inp1"></div></div>
@@ -625,7 +653,7 @@
          </div>
         <div class="row py-3">
           <div class="col-sm-6">
-          <label for="exampleFormControlInput1" class="form-label title1">Area Code</label>
+          <label class="form-label title1 ps-0">Area Code</label>
           <select class="form-select mb-3" aria-label="Disabled select example">
             <option id="opt1" value="1" selected>+44 (United Kingdom)</option>
             <option id="opt2" value="2">+33 (France)</option>
@@ -633,43 +661,43 @@
           </select>
           </div>
           <div class="col-sm-6">
-            <label for="exampleFormControlInput1" class="form-label title1">Phone Number</label>
+            <label class="form-label title1 ps-0">Phone Number</label>
             <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number">
-            <label for="exampleFormControlInput1" class="form-label title1">(To receive your PIN code)</label>
+            <label class="form-label title1">(To receive your PIN code)</label>
           </div>
-          <div class="col-6">
-            <label for="exampleFormControlInput1" class="form-label title1">Email</label>
+          <div class="col-sm-6">
+            <label class="form-label title1 ps-0">Email</label>
             <input type="email" class="form-control" placeholder="mydetails@email.com" aria-label="Email">
-            <label for="exampleFormControlInput1" class="form-label title1">(To connect to your Customer Area)</label>
+            <label class="form-label title1 ps-0">(To connect to your Customer Area)</label>
           </div>
         </div>
-        <div class="row pt-5">
-          <div class="title1 fs-2 mb-4">Residential Address</div>
+        <div class="row pt-sm-5">
+          <div class="title1 fs-2 mb-2">Residential Address</div>
           <div class="col-sm-6 pt-3">
-            <label for="exampleFormControlInput1" class="form-label title1">Address</label>
+            <label class="form-label title1 ps-0">Address</label>
             <input type="text" class="form-control" placeholder="Address" aria-label="Address">
           </div>
           <div class="col-sm-6 pt-3">
-            <label for="exampleFormControlInput1" class="form-label title1">Additional Address Details</label>
+            <label class="form-label title1 ps-0">Additional Address Details</label>
             <input type="text" class="form-control" placeholder="Additional Address Details" aria-label="Additional Address Details">
           </div>
           <div class="col-sm-4 pt-3">
-            <label for="exampleFormControlInput1" class="form-label title1">City</label>
+            <label class="form-label title1 ps-0">City</label>
             <input type="text" class="form-control" placeholder="City" aria-label="City">
           </div> 
           <div class="col-sm-4 pt-3">
-            <label for="exampleFormControlInput1" class="form-label title1">Zip Code</label>
+            <label class="form-label title1 ps-0">Zip Code</label>
             <input type="text" class="form-control" placeholder="Zip Code" aria-label="Zip Code">
           </div> 
           <div class="col-sm-4 pt-3">
-            <label for="exampleFormControlInput1" class="form-label title1">Country</label>
+            <label class="form-label title1 ps-0">Country</label>
             <select class="form-select mb-3" aria-label="Disabled select example">
               <option id="opt1" value="1" selected>United Kingdom</option>
               <option id="opt2" value="2">France</option>
               <option id="opt3" value="3">Israel</option>
             </select>
           </div>
-          <div class="col-sm-6 form-check mt-4 pt-3">
+          <div class="col-sm-6 mt-4 mb-2 pt-3">
             <input class="form-check-input cb2" type="checkbox" value="" id="">
             <label class="form-check-label" for="cb1">Delivery Address (if different)</label>
           </div>
@@ -677,23 +705,23 @@
         <div  id="addAddress">
         <div class="row d-flex">
           <div class="col-sm-5 pt-3">
-            <label for="exampleFormControlInput1" class="form-label title1">Address</label>
+            <label class="form-label title1 ps-0">Address</label>
             <input type="text" class="form-control" placeholder="Address" aria-label="Address">
           </div>
           <div class="col-sm-5 pt-3">
-            <label for="exampleFormControlInput1" class="form-label title1">Additional Address Details</label>
+            <label class="form-label title1 ps-0">Additional Address Details</label>
             <input type="text" class="form-control" placeholder="Additional Address Details" aria-label="Additional Address Details">
           </div>
           <div class="col-sm-4 pt-3">
-            <label for="exampleFormControlInput1" class="form-label title1">City</label>
+            <label class="form-label title1 ps-0">City</label>
             <input type="text" class="form-control" placeholder="City" aria-label="City">
           </div> 
           <div class="col-sm-4 pt-3">
-            <label for="exampleFormControlInput1" class="form-label title1">Zip Code</label>
+            <label class="form-label title1 ps-0">Zip Code</label>
             <input type="text" class="form-control" placeholder="Zip Code" aria-label="Zip Code">
           </div> 
           <div class="col-sm-4 pt-3">
-            <label for="exampleFormControlInput1" class="form-label title1">Country</label>
+            <label class="form-label title1 ps-0">Country</label>
             <select class="form-select mb-3" aria-label="Disabled select example">
               <option id="opt4" value="1" selected>United Kingdom</option>
               <option id="opt5" value="2">France</option>
@@ -702,23 +730,23 @@
           </div>
         </div>
        </div>
-        <div class="row pt-5">
-          <div class="title1 fs-2 mb-4">Security</div>
+        <div class="row pt-sm-5 mt-2">
+          <div class="title1 fs-2 mb-2">Security</div>
           <div class="col-sm-6 pt-3">
-            <label for="exampleFormControlInput1" class="form-label title1">Secret Question</label>
+            <label class="form-label title1 ps-0">Secret Question</label>
             <select class="form-select mb-3" aria-label="Disabled select example">
               <option id="opt7" value="1" selected>What is your mother's first name?</option>
               <option id="opt8" value="2">What is the name of your favorite book?</option>
               <option id="opt9" value="3">What is the name of your 1st school?</option>
             </select>
-            <label for="exampleFormControlInput1" class="form-label title1">(To help secure your card and your account)</label>
+            <label class="form-label title1 ps-0">(To help secure your card and your account)</label>
           </div>
           <div class="col-sm-6 pt-3">
-            <label for="exampleFormControlInput1" class="form-label title1">Answer</label>
+            <label class="form-label title1 ps-0">Answer</label>
             <input type="text" class="form-control" placeholder="Answer" aria-label="Answer">
           </div>
           <div class="col-sm-6 pt-3">
-            <label for="exampleFormControlInput1" class="form-label title1">Card #1 First Deposit</label>
+            <label class="form-label title1 ps-0">Card #1 First Deposit</label>
             <select class="form-select mb-3" aria-label="Disabled select example">
               <option class="opt0" value="1" selected>Select Card Deposit</option>
               <option class="opt1" value="1">0 Eur</option>
@@ -728,7 +756,7 @@
           </div>
           <div id="secondcard" class="row pt-3">
             <div class="col-sm-6 pe-0">
-            <label for="exampleFormControlInput1" class="form-label title1">Card #2 First Deposit</label>
+            <label class="form-label title1 ps-0">Card #2 First Deposit</label>
             <select class="form-select mb-3" aria-label="Disabled select example">
               <option id="opt1" value="1" selected>Select Card Deposit</option>
               <option id="opt1" value="1">0 Eur</option>
@@ -745,13 +773,14 @@
             <input class="form-check-input" type="checkbox" value="" id="">
             <label class="form-check-label" for="cb3">I would like to receive exclusive offers</label>
           </div>
-          <div class="row d-flex justify-content-between mt-4">
+          <div class="row d-flex justify-content-between mt-4 px-2">
             <button type="button" id="previous2" class="previous btn col-2 p-2"><i class="bi bi-arrow-left"></i> Previous</button>
             <button type="button" id="continue2" class="continue btn col-2">Continue <i class="bi bi-arrow-right"></i></button>
            </div>
+          </div>
       </div>
       <div class="col-sm-6">
-        <img src="/img/step-2-img.jpg.jpg" alt="" class="img-fluid">
+        <img src="./img/step-2-img.jpg.jpg" alt="" class="img-fluid">
       </div>
     </div>
    </div>
@@ -759,11 +788,11 @@
 <!--step 3-->
    <div id="section5">
     <div class="row d-flex">
-     <div class="col-lg-6 ps-sm-5">
-      <div class="row d-flex justify-content-center m-2">
-        <div class="row d-flex ms-sm-5 ps-sm-5 py-2">
-          <div class="fs-2 title1 row mb-4">PAYMENT MODE</div>
-          <div class="d-flex align-items-center">
+     <div class="col-lg-6 p-4">
+      <div class="mx-sm-5">
+        <div class="row d-flex ms-sm-5 py-5">
+          <div class="fs-2 title1 text-uppercase justify-content-center mb-4">PAYMENT MODE</div>
+          <div class="d-flex align-items-center ps-1">
            <div><div class="inp3"></div></div>
            <div><div class="inp3"></div></div>
            <div><div class="inp2"><i class="bi bi-arrow-right"></i></div></div>
@@ -771,79 +800,83 @@
          </div>
        <div id="singlecard"> 
        <div class="d-flex justify-content-around">
-         <div class="card2 border-primary my-5 mx-sm-5 row d-flex align-items-center">
-          <div class="title1 fs-3 py-5 ps-5">Previous information</div>
-          <dl class="d-flex row text-start">
-           <div class="col-6 title1 ps-5">
+         <div class="card2 my-5 mx-sm-5 row d-flex align-items-center">
+          <div class="title1 fs-3 py-5 ps-sm-5">Previous information</div>
+          <dl class="d-flex row text-start mb-1">
+           <div class="col-sm-6 title1 ps-sm-5">
             <dt>Name:</dt>
             <dd>Charee Troy</dd>
            </div>
-           <div class="col-6 title1">
+           <div class="col-sm-6 title1 ps-sm-5">
             <dt>Address:</dt>
             <dd>Pinsker 10, Paris 612345, France</dd>
            </div>
-           <div class="col-6 title1 ps-5">
+           <div class="col-sm-6 title1 ps-sm-5">
             <dt>IBAN:</dt>
             <dd>FR</dd>
            </div>
-           <div class="col-6 title1">
+           <div class="col-sm-6 title1 ps-sm-5">
             <dt>Card type:</dt>
             <dd>Silver AMEX International</dd>
            </div>
-           <div class="col-6 title1 ps-5">
+           <div class="col-sm-6 title1 ps-sm-5">
             <dt>Currency:</dt>
             <dd>EUR</dd>
            </div>
           </dl>
-          <div class="d-flex justify-content-between">
-           <span class="title1 fw-bold"> <i class="far fa-times-circle"></i> 1 x card (annual fees)</span><span class="title1">29.90 €</span>
+          <div class="d-flex justify-content-between px-sm-5">
+           <span class="title1 fw-bold ps-0"><i class="far fa-times-circle"></i> 1 x card (annual fees)</span><span class="title1">29.90 €</span>
            </div>
-           <div class="d-flex justify-content-between mb-1">
-            <span class="title1 fw-bold"><i class="far fa-times-circle"></i> First deposit</span><span class="title1">30 €</span>
+           <div class="d-flex justify-content-between px-sm-5 mb-1">
+            <span class="title1 fw-bold ps-0"><i class="far fa-times-circle"></i> First deposit</span><span class="title1">30 €</span>
           </div>
-          <div id="seccardsummary">
-            <dl class="d-flex row text-start">
-              <div class="col-6 title1 ps-5">
+          <div id="seccardsummary" class="px-sm-3">
+            <dl class="d-flex row text-start mb-1">
+              <div class="col-sm-6 title1 ps-sm-5">
                 <dt>Second Card IBAN:</dt>
                 <dd>UK</dd>
                </div>
-               <div class="col-6 title1">
+               <div class="col-sm-6 title1 ps-sm-5">
                 <dt>Card type:</dt>
                 <dd>Silver AMEX International</dd>
                </div>
-               <div class="col-6 title1 ps-5">
+               <div class="col-sm-6 title1 ps-sm-5">
                 <dt>Currency:</dt>
                 <dd>EUR</dd>
                </div>
               </dl>
-              <div class="d-flex justify-content-between">
-               <span class="title1 fw-bold">1 x card (annual fees)</span><span class="title1">29.90 €</span>
+              <div class="d-flex justify-content-between ms-sm-1 px-sm-4">
+                <span class="title1 fw-bold ps-0"><i class="far fa-times-circle"></i> 1 x card (annual fees)</span><span class="title1">29.90 €</span>
+                </div>
+                <div class="d-flex justify-content-between ms-sm-1 px-sm-4 mb-1">
+                 <span class="title1 fw-bold ps-0"><i class="far fa-times-circle"></i> First deposit</span><span class="title1">30 €</span>
                </div>
-               <div id="depo" class="d-flex justify-content-between">
-                <span class="title1 fw-bold">First deposit</span><span class="title1">30 €</span>
-              </div>
-         </div>
-         <div class="couponline"> 
-          <div class="mb-3 row d-flex justify-content-center ">
-            <label class="col-md-2 title1 fw-bold">COUPON</label>
-            <div class="col-sm-7 pb-1">
+           </div>
+         <div class="couponline px-3"> 
+          <div class="mb-3 row d-flex align-items-center justify-content-center px-sm-4">
+            <label class="col-md-2 title1 fw-bold ">COUPON</label>
+            <div class="col-sm-10 row mt-2 justify-content-between">
+            <div class="col-9 pb-1 ps-0">
               <input type="text" class="form-control" id="inputCoupon" placeholder="Write the coupon code here...">
             </div>
-            <div class="col-2 pe-2">
-              <button type="button" class="validate btn btn-secondary">Validate</button>
+            <div class="col-3 d-flex align-items-center justify-content-end ">
+              <button type="button" class="validate btn btn-secondary me-0">Validate</button>
             </div>
+          </div>
           </div>
           </div>
           <div class="coupon"> 
-            <div class="row d-flex justify-content-around pe-2">
-            <div class="col-md-4 title1 fs-6 fw-bold discoupon" role="button"><i class="fas fa-arrow-circle-left"></i> Discount coupon</div>
+            <div class="row d-flex align-items-center justify-content-between px-sm-5">
+            <div class="col-md-4 title1 fs-6 fw-bold discoupon ps-sm-0" role="button"><i class="fas fa-arrow-circle-left"></i> Discount coupon</div>
+            <div class="col-md-8 row ps-4 justify-content-between">
             <div id="code" class="col-4 border border-success text-success d-flex justify-content-center align-items-center"> 05789944DF </div>
-            <div class="col-3 d-flex align-items-center text-warning justify-content-end">- 20 €</div>
+            <div class="col-6 d-flex align-items-center text-warning justify-content-end me-sm-2 pe-0">- 20 €</div>
+          </div>
           </div>
         </div>
           <div><hr class="px-3"></div>
-          <div class="d-flex justify-content-between mb-4">
-            <span class="title1 fw-bold fs-4">Total</span><span class="title1">59.90 €</span>
+          <div class="d-flex justify-content-between px-sm-4 mb-4">
+            <span class="title1 fw-bold fs-4 ps-sm-4">Total</span><span class="title1 pe-sm-4">59.90 €</span>
           </div>
        </div>
        </div>
@@ -852,9 +885,9 @@
        <div id="multicards">
        <div class="d-flex justify-content-around">
         <div class="card2 border-primary my-5 mx-sm-5 row d-flex align-items-center">
-         <div class="title1 fs-3 py-5 ps-5">Previous information</div>
-         <dl class="d-flex row text-start">
-          <div class="col-6 title1 ps-5">
+         <div class="title1 fs-3 py-5 ps-sm-4">Previous information</div>
+         <dl class="d-flex row text-start ps-sm-4">
+          <div class="col-6 title1">
            <dt>Name:</dt>
            <dd>Charee Troy</dd>
           </div>
@@ -871,8 +904,8 @@
                 </button>
               </h2> 
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body row">
-                  <div class="col-6 title1 ps-5">
+                <div class="accordion-body row ps-5">
+                  <div class="col-6 title1">
                     <dt>IBAN:</dt>
                     <dd>FR</dd>
                   </div>
@@ -880,15 +913,15 @@
                    <dt>Card type:</dt>
                    <dd>Silver AMEX International</dd>
                  </div>
-                 <div class="col-6 title1 ps-5">
+                 <div class="col-6 title1">
                    <dt>Currency:</dt>
                    <dd>EUR</dd>
                  </div>
                  <div class="d-flex justify-content-between">
-                   <span class="title1 fw-bold"> <i class="far fa-times-circle"></i> 1 x card (annual fees)</span><span class="title1">29.90 €</span>
+                   <span class="title1 fw-bold px-0"><i class="far fa-times-circle"></i> 1 x card (annual fees)</span><span class="title1">29.90 €</span>
                  </div>
                  <div class="d-flex justify-content-between mb-1">
-                   <span class="title1 fw-bold"><i class="far fa-times-circle"></i> First deposit</span><span class="title1">30 €</span>
+                   <span class="title1 fw-bold px-0"><i class="far fa-times-circle"></i> First deposit</span><span class="title1">30 €</span>
                  </div>
                </div>
              </div>
@@ -899,8 +932,9 @@
                <span class="col-4"><i class="far fa-times-circle"></i> card #2</span> <span class="col-8">Platinium</span>
               </button>
             </h2> 
-            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">              <div class="accordion-body row">
-                <div class="col-6 title1 ps-5">
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">              
+              <div class="accordion-body row ps-5">
+                <div class="col-6 title1">
                   <dt>IBAN:</dt>
                   <dd>UK</dd>
                 </div>
@@ -908,15 +942,15 @@
                  <dt>Card type:</dt>
                  <dd>Platinium</dd>
                </div>
-               <div class="col-6 title1 ps-5">
+               <div class="col-6 title1">
                  <dt>Currency:</dt>
                  <dd>EUR</dd>
                </div>
                <div class="d-flex justify-content-between">
-                 <span class="title1 fw-bold"> <i class="far fa-times-circle"></i> 1 x card (annual fees)</span><span class="title1">29.90 €</span>
+                 <span class="title1 fw-bold px-0"><i class="far fa-times-circle"></i> 1 x card (annual fees)</span><span class="title1">29.90 €</span>
                </div>
                <div class="d-flex justify-content-between mb-1">
-                 <span class="title1 fw-bold"><i class="far fa-times-circle"></i> First deposit</span><span class="title1">30 €</span>
+                 <span class="title1 fw-bold px-0"><i class="far fa-times-circle"></i> First deposit</span><span class="title1">30 €</span>
                </div>
              </div>
            </div>
@@ -927,8 +961,9 @@
                <span class="col-4"><i class="far fa-times-circle"></i> card #3</span> <span class="col-8">Platinium</span>
               </button>
             </h2> 
-            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">              <div class="accordion-body row">
-                <div class="col-6 title1 ps-5">
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">              
+              <div class="accordion-body row ps-5">
+                <div class="col-6 title1">
                   <dt>IBAN:</dt>
                   <dd>UK</dd>
                 </div>
@@ -936,15 +971,15 @@
                  <dt>Card type:</dt>
                  <dd>Platinium</dd>
                </div>
-               <div class="col-6 title1 ps-5">
+               <div class="col-6 title1">
                  <dt>Currency:</dt>
                  <dd>EUR</dd>
                </div>
                <div class="d-flex justify-content-between">
-                 <span class="title1 fw-bold"> <i class="far fa-times-circle"></i> 1 x card (annual fees)</span><span class="title1">29.90 €</span>
+                 <span class="title1 fw-bold px-0"><i class="far fa-times-circle"></i> 1 x card (annual fees)</span><span class="title1">29.90 €</span>
                </div>
                <div class="d-flex justify-content-between mb-1">
-                 <span class="title1 fw-bold"><i class="far fa-times-circle"></i> First deposit</span><span class="title1">30 €</span>
+                 <span class="title1 fw-bold px-0"><i class="far fa-times-circle"></i> First deposit</span><span class="title1">30 €</span>
                </div>
              </div>
            </div>
@@ -955,8 +990,9 @@
              <span class="col-4"><i class="far fa-times-circle"></i> card #4</span> <span class="col-8">Platinium</span>
             </button>
           </h2> 
-          <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">              <div class="accordion-body row">
-              <div class="col-6 title1 ps-5">
+          <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">              
+            <div class="accordion-body row ps-5">
+              <div class="col-6 title1">
                 <dt>IBAN:</dt>
                 <dd>UK</dd>
               </div>
@@ -964,15 +1000,15 @@
                <dt>Card type:</dt>
                <dd>Platinium</dd>
              </div>
-             <div class="col-6 title1 ps-5">
+             <div class="col-6 title1">
                <dt>Currency:</dt>
                <dd>EUR</dd>
              </div>
              <div class="d-flex justify-content-between">
-               <span class="title1 fw-bold"> <i class="far fa-times-circle"></i> 1 x card (annual fees)</span><span class="title1">29.90 €</span>
+               <span class="title1 fw-bold px-0"><i class="far fa-times-circle"></i> 1 x card (annual fees)</span><span class="title1">29.90 €</span>
              </div>
              <div class="d-flex justify-content-between mb-1">
-               <span class="title1 fw-bold"><i class="far fa-times-circle"></i> First deposit</span><span class="title1">30 €</span>
+               <span class="title1 fw-bold px-0"><i class="far fa-times-circle"></i> First deposit</span><span class="title1">30 €</span>
              </div>
            </div>
          </div>
@@ -980,28 +1016,32 @@
 
          </div>
 
-         <div class="d-flex justify-content-between mb-1">
+         <div class="d-flex justify-content-between mb-1 px-1">
           <span class="title1 fw-bold">For professional account:</span><span class="title1"> + 8 €</span>
         </div>
-        <div class="couponline"> 
-         <div class="mb-3 row d-flex justify-content-center ">
-           <label class="col-md-2 title1 fw-bold">COUPON</label>
-           <div class="col-sm-7 pb-1">
-             <input type="text" class="form-control" id="inputCoupon" placeholder="Write the coupon code here...">
-           </div>
-           <div class="col-sm-2 pe-2">
-             <button type="button" class="validate btn btn-secondary">Validate</button>
-           </div>
-         </div>
-         </div>
+        <div class="couponline px-3"> 
+          <div class="mb-3 row d-flex align-items-center justify-content-between pe-sm-2">
+            <label class="col-md-2 title1 fw-bold ">COUPON</label>
+            <div class="col-sm-10 row mt-2 justify-content-between">
+            <div class="col-9 pb-1">
+              <input type="text" class="form-control" id="inputCoupon" placeholder="Write the coupon code here...">
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-end pe-0">
+              <button type="button" class="validate btn btn-secondary">Validate</button>
+            </div>
+          </div>
+          </div>
+          </div>
+          <div class="coupon"> 
+            <div class="row d-flex align-items-center justify-content-between px-sm-2">
+            <div class="col-md-4 title1 fs-6 fw-bold discoupon ps-sm-1" role="button"><i class="fas fa-arrow-circle-left"></i> Discount coupon</div>
+            <div class="col-md-8 row ps-4 pe-0 justify-content-between">
+            <div id="code" class="col-4 border border-success text-success d-flex justify-content-center align-items-center"> 05789944DF </div>
+            <div class="col-8 d-flex align-items-center text-warning justify-content-end">- 20 €</div>
+          </div>
+          </div>
+        </div>
 
-         <div class="coupon"> 
-           <div class="row d-flex justify-content-around pe-2">
-           <div class="col-md-4 title1 fs-6 fw-bold discoupon" role="button"><i class="fas fa-arrow-circle-left"></i> Discount coupon</div>
-           <div id="code" class="col-4 border border-success text-success d-flex justify-content-center align-items-center"> 05789944DF </div>
-           <div class="col-3 d-flex align-items-center text-warning justify-content-end">- 20 €</div>
-         </div>
-       </div>
          <div><hr class="px-3"></div>
          <div class="d-flex justify-content-between mb-4">
            <span class="title1 fw-bold fs-4">Total</span><span class="title1">59.90 €</span>
@@ -1009,30 +1049,31 @@
       </div>
       </div>
       </div>
-      <div class="row d-flex align-items-center justify-content-center px-5">
-        <div class="col-sm-6 box align-items-center row m-2">
-         <div class="d-flex justify-content-center"><img src="/img/master card.png" alt="" class="img-fluid logo" width="100" height="100"></div><span class="text-center pb-2">Master Card</span>
+
+      <div class="row d-flex align-items-center justify-content-center px-sm-5">
+        <div class="col-6 box align-items-center row m-2">
+         <div class="d-flex justify-content-center"><img src="./img/master card.png" alt="" class="img-fluid" width="150" height="100"></div><span class="text-center pb-2">Master Card</span>
         </div>
-        <div class="col-sm-6 box row m-2">
-         <div class="d-flex justify-content-center"><img src="/img/paypal.png" alt="" class="img-fluid logo" width="100" height="100"></div><span class="text-center pb-4">Paypal</span>
+        <div class="col-6 box align-items-center row m-2">
+         <div class="d-flex justify-content-center"><img src="./img/paypal.png" alt="" class="img-fluid" width="120" height="100"></div><span class="text-center mb-5">Paypal</span>
         </div>
-        <div class="col-sm-6 box row m-2">
-        <div class="d-flex justify-content-center"><img src="/img/ויזה-שירות-לקוחות-לוגו.jpg" alt="" class="img-fluid logo" width="100" height="100"> </div><span class="text-center pb-4">VISA card</span>
+        <div class="col-6 box align-items-center row m-2">
+        <div class="d-flex justify-content-center"><img src="./img/ויזה-שירות-לקוחות-לוגו.jpg" alt="" class="img-fluid" width="100" height="100"> </div><span class="text-center pb-4">VISA card</span>
         </div>
-        <div class="col-sm-6 box row m-2">
-        <div class="d-flex justify-content-center"><img src="/img/neosurf.png" alt="" class="img-fluid logo mt-3" width="150" height="400"></div> <span class="text-center pb-4">Neosurf</span>
+        <div class="col-6 box align-items-center row m-2">
+        <div class="d-flex justify-content-center"><img src="./img/neosurf.png" alt="" class="img-fluid mt-3" width="180" height="400"></div> <span class="text-center pb-4">Neosurf</span>
         </div>
-        <div class="col-sm-6 box row m-2">
-        <div class="d-flex justify-content-center"><img src="/img/bank transfer.png" alt="" class="img-fluid logo" width="150" height="200"></div> <span class="text-center pb-4">Bank Transfer</span>
+        <div class="col-6 box align-items-center row m-2">
+        <div class="d-flex justify-content-center"><img src="./img/bank transfer.png" alt="" class="img-fluid" width="180" height="200"></div> <span class="text-center pb-4">Bank Transfer</span>
        </div>
-       <div class="col-sm-6 box row m-2">
-        <div class="d-flex justify-content-center"><img src="/img/stripe.png" alt="" class="img-fluid logo" width="150" height="100"></div> <span class="text-center pb-3">Stripe</span>
+       <div class="col-6 box align-items-center row m-2">
+        <div class="d-flex justify-content-center"><img src="./img/stripe.png" alt="" class="img-fluid" width="180" height="100"></div> <span class="text-center pb-3">Stripe</span>
        </div>
      </div>
-       <div class="d-flex m-5 ps-5">
+       <div class="d-flex my-5 ps-sm-5">
         <img src="/img/image 2@2x.png" alt="" width="95" height="40"><span class="pt-1 ps-3">Secure payment option - SSl</span>
        </div>
-       <div class="row d-flex justify-content-between mt-4">
+       <div class="row d-flex justify-content-between mt-4 mx-sm-5 px-1">
         <button type="button" id="previous3" class="previous btn col-2 p-2"><i class="bi bi-arrow-left"></i> Previous</button>
         <button type="button" id="continue" class="continue btn col-2">Continue <i class="bi bi-arrow-right"></i></button>
        </div>
@@ -1040,7 +1081,7 @@
    </div>
 
      <div class="col-lg-6">
-       <img src="/img/energetic-positive-afro-american-lady-dances-with-2021-09-02-14-29-01-utc 1.jpg" alt="" class="img-fluid">
+       <img src="./img/energetic-positive-afro-american-lady-dances-with-2021-09-02-14-29-01-utc 1.jpg" alt="" class="img-fluid">
      </div>
     </div>
    </div>
@@ -1050,38 +1091,38 @@
    <footer>
     <div class="f1 pt-5">
     <div class="row d-sm-flex justify-content-center">
-      <div class="col-sm-2 pb-4">
-        <img src="img/American-Express-Logo.png" alt="" width="150" height="70" class="img-fluid">
+      <div class="col-sm-2 pb-4 ps-1">
+        <img src="./img/American-Express-Logo.png" alt="" width="150" height="70" class="img-fluid">
       </div>
-      <div class="col-sm-6 row text-white justify-content-around ms-3">
+      <div class="col-sm-6 row text-white ms-3">
       <div class="col-sm-8 d-flex justify-content-start">
        <div class="col-6 pt-3">
         <dl class="col">
-          <dt class="">Terms</dt><br>
-          <dd class="">general terms</dd>
-          <dd class="">legal notice</dd>
-          <dd class="">privacy policy</dd>
+          <dt>Terms</dt><br>
+          <dd><i class="bi bi-caret-right"></i>  general terms</dd>
+          <dd><i class="bi bi-caret-right"></i>  legal notice</dd>
+          <dd><i class="bi bi-caret-right"></i>  privacy policy</dd>
         </dl>
        </div>
        <div class="col-6 pt-3">
         <dl class="col">
-          <dt class="">Why AMEX?</dt><br>
-          <dd class="">Why AMEX?</dd>
-          <dd class="">IBAN and RIB</dd>
-          <dd class=""> 3D Secure</dd>
+          <dt>Why AMEX?</dt><br>
+          <dd><i class="bi bi-caret-right"></i>  Why AMEX?</dd>
+          <dd><i class="bi bi-caret-right"></i>  IBAN and RIB</dd>
+          <dd><i class="bi bi-caret-right"></i>  3D Secure</dd>
         </dl>
        </div>
      </div>
       <div class="col-sm-4 justify-content-center pt-3">
         <dl class="col">
-          <dt class="">The AMEX card</dt><br>
-          <dd class="">What's a Prepaid Card?</dd>
-          <dd class="">Activate your card</dd>
-          <dd class="">Security</dd>
+          <dt>The AMEX card</dt><br>
+          <dd><i class="bi bi-caret-right"></i>  What's a Prepaid Card?</dd>
+          <dd><i class="bi bi-caret-right"></i>  Activate your card</dd>
+          <dd><i class="bi bi-caret-right"></i>  Security</dd>
         </dl>
       </div>
-      <div class="pt-3 pb-4">
-        All other trademarks and logos mentioned in this website are used for identification<br> 
+      <div class="pt-3 pb-4 col-sm-8 ">
+        All other trademarks and logos mentioned in this website are used for identification 
         purposes only and remain the exclusive property of their respective owners.
       </div>
     </div>
