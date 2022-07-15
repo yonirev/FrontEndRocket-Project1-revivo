@@ -71,7 +71,7 @@
 #section2 .card1 {
   background-color: #fff;
   box-shadow: 5px 12px 45px rgba(0, 100, 149, 0.18);
-  border-radius: 16px;
+  border-radius: 10px;
   width: 360px;
   height: 430px;
 }
@@ -97,9 +97,11 @@
 }
 
 /*mr. & miss.*/
-.img1 {
-  background: url("../img/shop-assistant-talking-to-young-couple-shopping-ki-2022-01-25-02-31-19-utc\ 1.png") no-repeat center center ;
-  background-size: cover;
+@media (min-width: 768px) and (max-width: 1500px) {
+ .test1{
+ overflow-y: auto;
+ height: 650px;
+ }
 }
 
 #section3 #formM #deletecarde {
@@ -135,11 +137,6 @@ text-align: center;
 display: none;
 }
 
-.img2{
-  background: url("../img/successful-shopping-in-the-shopping-mall-2021-08-27-09-17-52-utc\ 1.jpg") no-repeat center center;
-  background-size: cover;
-}
-
 .corporateIBAN {
   display: none;
 }
@@ -149,14 +146,25 @@ display: none;
   display: none;
 }
 
-.img3 {
-  background: url("../img/two-elegant-men-coming-to-fashion-boutique-on-shop-2021-08-29-01-35-41-utc\ 1.png")
-}
 
 /*step 2*/
 #section4 {
   display: none;
 }
+
+@media (min-width: 768px) and (max-width: 1500px) {
+  .test2{
+  overflow-y: auto;
+  height: 680px;
+  }
+ }
+
+ @media (min-width: 1500px) and (max-width: 3000px) {
+  .test2{
+  overflow-y: auto;
+  height: 950px;
+  }
+ }
 
 #addAddress{
   display: none;
@@ -171,6 +179,20 @@ display: none;
   background-color: #E5E5E5;
   display: none;
 }
+
+@media (min-width: 768px) and (max-width: 1500px) {
+  .test2{
+  overflow-y: auto;
+  height: 780px;
+  }
+ }
+
+ @media (min-width: 1500px) and (max-width: 3000px) {
+  .test2{
+  overflow-y: auto;
+  height: 950px;
+  }
+ }
 
 .card2 {
 background-color: #fff;
